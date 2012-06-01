@@ -34,7 +34,7 @@ Module MOBZHash
         Console.WriteLine()
         Console.WriteLine("Usage:")
         Console.WriteLine()
-        Console.WriteLine("Hash [-v] [-r] [-d] hash-type [file-spec [file-spec ...]]")
+        Console.WriteLine("MOBZHash [-v] [-r] [-d] hash-type [file-spec [file-spec ...]]")
         Console.WriteLine()
         Console.WriteLine("hash-type: hash type to use. All .NET hash algorihms are supported")
         Console.WriteLine("           Examples: MD5, SHA1 (default), SHA256, SHA384, SHA512")
@@ -203,7 +203,7 @@ Module MOBZHash
               ' Use the relative name for display purposes if we have a single file spec.
               ' Otherwise, use the full name of the file
               Dim displayName As String = relativeFileName
-              If fileSpecs.Count > 0 Then
+              If fileSpecs.Count > 1 Then
                 displayName = file.FullName
               End If
 
